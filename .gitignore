@@ -1,9 +1,6 @@
 # Virtual Environment
 .venv/
 
-# Log files
-logs/
-
 # Python
 __pycache__/
 *.py[cod]

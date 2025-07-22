@@ -1,12 +1,14 @@
 from abc import ABC, abstractmethod
 
 class Robot(ABC):
-    def __init__(self, id, behaviour=None):
+    def __init__(self, id):
         self.id = id
-        self.behaviour = behaviour
+        self.behaviour = self.assign_behaviour()
 
     @abstractmethod
     def run(self):
         pass
 
-chillBot = Robot()
+    @abstractmethod
+    def assign_behaviour(self):
+        pass

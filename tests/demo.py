@@ -1,9 +1,7 @@
-from pkbots import Goalie, Player
+from pkbots import Goalie, Player, MasterController
 
-# Creating instances
-goalie_bot = Goalie(1)
-player_bot = Player(2)
+# Initialize the master controller
+master_controller = MasterController()
 
-# Test the robots
-goalie_bot.run()
-player_bot.run()
+# Update the robots
+master_controller.update()

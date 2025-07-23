@@ -1,12 +1,12 @@
-from abc import ABC, abstractmethod
+from .robot import Robot
 
-class Goalie(ABC):
-    def __init__(self, id, behaviour=None):
-        self.id = id
-        self.behaviour = behaviour
+class Goalie(Robot):
+    def __init__(self, id):
+        super().__init__(id)
+        super().assign_behaviour()
 
-    @abstractmethod
     def run(self):
-        pass
+        print(f"Robot {self.id}: Guarding Goal")
 
-chillBot = Robot()
+    def assign_behaviour(self):
+        self.behaviour = "goalie"

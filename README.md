@@ -25,7 +25,7 @@ controller.update()
 - **Robot**: Abstract base class defining robot interface
 - **Player/Goalie**: Concrete robot implementations with specific behaviors
 - **MasterController**: Manages robot collection and coordinates updates
-- **Behavior Pattern**: Each robot type has its own `run()` method
+- **Behavior Pattern**: Each robot type has its own `active()` method where they are performing their task.
 
 ```python
 from pkbots import MasterController

@@ -6,9 +6,13 @@ class Robot(ABC):
         self.behaviour = self.assign_behaviour()
 
     @abstractmethod
-    def run(self):
+    def active(self):
         pass
 
     @abstractmethod
     def assign_behaviour(self):
+        pass
+
+    @abstractmethod
+    def idle(self):
         pass

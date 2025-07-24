@@ -20,4 +20,4 @@ class MasterController:
     
     def update(self):
         for robot in self.robots:
-            robot.run()
+            robot.active()
